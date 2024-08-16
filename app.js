@@ -11,7 +11,7 @@ const fetchVideos = () => {
         key: api_key,
         part: 'snippet',
         chart: 'mostPopular',
-        maxResults: 10,
+        maxResults: 60,
         regionCode: 'RU'
     }))
     .then(res => res.json())
