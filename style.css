@@ -318,30 +318,43 @@ a {
   color: #242424;
 }
 
+/* iPad uchun dizayn (max-width: 768px) */
+/* iPad uchun dizayn (max-width: 768px) */
 @media (max-width: 768px) {
   .navbar {
     height: 50px;
     padding: 0 2vw;
   }
+
   .search-box {
     width: 60%;
+    margin: 0 auto; /* Markazlash */
   }
+
   .user-options .icon {
     margin-right: 15px;
   }
+
   .side-bar {
-    min-width: 200px;
-    width: 200px;
+    display: none; /* Menyuni yashirish */
   }
+
   .filters {
-    left: 200px;
-    width: calc(100% - 200px);
+    left: 0; /* Yon panel olib tashlanganligi uchun chapga joylash */
+    width: 100%; /* Kenglikni to'liq qoplash */
   }
+
   .video-container {
-    margin-left: 200px;
-    grid-template-columns: repeat(3, 1fr);
+    margin-left: 0; /* Yon panel bo'lmagani uchun chap marjin olib tashlangan */
+    grid-template-columns: repeat(1, 1fr); /* Har bir video to'liq kenglikda ko'rsatilsin */
+    gap: 20px; /* Videolar orasida biroz bo'sh joy qo'shish */
+  }
+
+  .video-item {
+    width: 100%; /* Video elementlari to'liq kenglikda bo'lsin */
   }
 }
+
 @media (max-width: 480px) {
   .navbar {
     height: 50px;
