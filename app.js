@@ -12,7 +12,7 @@ const fetchVideos = () => {
         part: 'snippet',
         chart: 'mostPopular',
         maxResults: 60,
-        regionCode: 'RU'
+        regionCode: 'IN'
     }))
     .then(res => res.json())
     .then(data => {
